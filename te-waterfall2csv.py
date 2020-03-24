@@ -30,6 +30,7 @@ class ThousandEyesWaterfallToCsv(object):
         args = parser.parse_args()
 
         if args.token is None:
+            print("Usage Error: No OAuth Token Given\n")
             parser.print_help()
             exit(2)
         else:
